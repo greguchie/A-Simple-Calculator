@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-f1-taB">
-                                <rect key="frame" x="0.0" y="68" width="393" height="716"/>
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pn-cc-2oC">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="117.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="109.33333333333333"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-3n-ekc">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="117.66666666666667"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-3n-ekc">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="109.33333333333333"/>
                                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -39,19 +39,22 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="b3d-5W-nNP">
-                                        <rect key="frame" x="0.0" y="119.66666666666666" width="393" height="117.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="111.33333333333334" width="393" height="109.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRH-PO-8px">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="117.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="109.33333333333333"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="A/C">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpb-qc-v4g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6J-Lc-65J">
-                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -59,170 +62,224 @@
                                                     <imageReference key="image" image="plus.forwardslash.minus" catalog="system" symbolScale="large" variableValue="1"/>
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="1"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54h-sf-Vhs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-kH-oje">
-                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="117.66666666666667"/>
+                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="109.33333333333333"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="percent" catalog="system"/>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OF2-OI-rqM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJe-zR-a0d">
-                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="divide" catalog="system"/>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEf-SQ-fkH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mZJ-Y4-XN3">
-                                        <rect key="frame" x="0.0" y="239.33333333333329" width="393" height="117.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="222.66666666666671" width="393" height="109.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asR-6k-Rgr">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="117.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="7">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAO-Aj-NKi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-Pv-rgk">
-                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="8">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuu-zl-jxD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVA-eQ-Rft">
-                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="117.66666666666667"/>
+                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="9">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ew6-Ke-oWL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-XU-pAc">
-                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system"/>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVT-a9-CqF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-Dz-S5q">
-                                        <rect key="frame" x="0.0" y="359" width="393" height="117.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="334" width="393" height="109.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-Io-Vws">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="117.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="4">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rX-BX-uxF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7R-J9-6BT">
-                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="5">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsc-Pe-k7V"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqD-8n-Wlu">
-                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="117.66666666666667"/>
+                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="6">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBa-1I-551"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va7-yh-a1Y">
-                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evi-98-Y5e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fyx-Mt-V9l">
-                                        <rect key="frame" x="0.0" y="478.66666666666669" width="393" height="117.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="445.33333333333337" width="393" height="109.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QY-EC-9J9">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="117.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="1">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWz-N6-RP2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-l4-tgY">
-                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="2">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8RO-13-z6N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-Zq-W83">
-                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="117.66666666666667"/>
+                                                <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="3">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybz-h3-msX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-Nr-ADV">
-                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                <connections>
+                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4u-ud-Mu0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="akr-19-6N4">
-                                        <rect key="frame" x="0.0" y="598.33333333333337" width="393" height="117.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="556.66666666666663" width="393" height="109.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-Ye-PK6">
-                                                <rect key="frame" x="0.0" y="0.0" width="196" height="117.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="0">
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mQ-CP-VkO"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6OV-mp-WMv">
-                                                <rect key="frame" x="197" y="0.0" width="196" height="117.66666666666667"/>
+                                                <rect key="frame" x="197" y="0.0" width="196" height="109.33333333333333"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y84-K8-TFN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="117.66666666666667"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="109.33333333333333"/>
                                                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                                             <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcJ-Lx-UlL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-1G-kRm">
-                                                        <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="117.66666666666667"/>
+                                                        <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="equal" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUa-Xx-rC5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -235,11 +292,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2pi-f1-taB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Rd-iQ-Jtp"/>
-                            <constraint firstItem="2pi-f1-taB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="7N9-8u-RBz"/>
+                            <constraint firstItem="2pi-f1-taB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7N9-8u-RBz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2pi-f1-taB" secondAttribute="trailing" id="S9m-5G-zLb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2pi-f1-taB" secondAttribute="bottom" id="lAL-Cf-MM8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="BBU-3n-ekc" id="872-wq-f1a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
