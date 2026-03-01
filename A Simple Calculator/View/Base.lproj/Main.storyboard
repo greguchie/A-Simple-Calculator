@@ -50,7 +50,7 @@
                                                     <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpb-qc-v4g"/>
+                                                    <action selector="acPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGW-8k-C0Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6J-Lc-65J">
@@ -58,12 +58,11 @@
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <imageReference key="image" image="plus.forwardslash.minus" catalog="system" symbolScale="large" variableValue="1"/>
-                                                    <fontDescription key="titleFontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="1"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54h-sf-Vhs"/>
+                                                    <action selector="plusMinusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqf-eU-wym"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-kH-oje">
@@ -73,17 +72,18 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="percent" catalog="system"/>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OF2-OI-rqM"/>
+                                                    <action selector="percPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cky-DU-Rcg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJe-zR-a0d">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="divide"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="divide" catalog="system"/>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEf-SQ-fkH"/>
+                                                    <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIb-R1-SOC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -130,11 +130,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-XU-pAc">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="times"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system"/>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVT-a9-CqF"/>
+                                                    <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZUq-Fs-9nG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -181,11 +182,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va7-yh-a1Y">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="minus"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evi-98-Y5e"/>
+                                                    <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOy-ZF-eAo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -232,11 +234,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-Nr-ADV">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="plus"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4u-ud-Mu0"/>
+                                                    <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zm9-pT-vfC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -271,14 +274,14 @@
                                                             <action selector="numButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcJ-Lx-UlL"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-1G-kRm">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-1G-kRm">
                                                         <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="109.33333333333333"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="equals"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="equal" catalog="system"/>
                                                         <connections>
-                                                            <action selector="calcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUa-Xx-rC5"/>
+                                                            <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9QR-Ax-RiC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -318,10 +321,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.67450980392156867" green="0.49803921568627452" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
